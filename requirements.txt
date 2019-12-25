@@ -8,8 +8,8 @@ Pillow==6.2.1
 scikit-learn
 toposort
 fastcluster
-matplotlib==3.1.1
-imageio==2.6.1
+matplotlib
+# imageio==2.6.1
 imageio-ffmpeg
 ffmpy==0.2.2
 # Revert back to nvidia-ml-py3 when windows/system32 patch is implemented
@@ -19,7 +19,7 @@ h5py==2.9.0
 Keras==2.2.4
 pywin32 ; sys_platform == "win32"
 pynvx==1.0.0 ; sys_platform == "darwin"
-
+tensorflow-gpu<=1.13.0
 # tensorflow is included within the docker image.
 # If you are looking for dependencies for a manual install,
 

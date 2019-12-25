@@ -1,0 +1,12 @@
+version: "2.3"
+services:
+  faceswap:
+    runtime: nvidia
+    restart: always
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    ports:
+      - "8889:8888"
+    volumes:
+        - "./:/srv"
